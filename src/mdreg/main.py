@@ -75,8 +75,8 @@ class MDReg:
         self.coreg = array
         n = self._npdt
         self.coreg = np.reshape(self.coreg, (n[0],n[2]))
-        if n[1] == 3:
-            self.elastix = default_bspline('3')
+        #if n[1] == 3:
+            #self.elastix = default_bspline('3')
         if self.package == 'skimage':
             rc, cc = np.meshgrid( 
                 np.arange(array.shape[0]), 
